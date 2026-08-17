@@ -42,7 +42,7 @@ product_data = {
 if st.button("Predict", type='primary'):
 
     response = requests.post(
-        f"{BACKEND_URL}/v1/predict",
+        "{BACKEND_URL}/v1/predict",
         json=product_data
     )
 
